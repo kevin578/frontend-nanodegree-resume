@@ -1,35 +1,80 @@
-var formattedName;
-var formattedRole;
-
-formattedName = HTMLheaderName.replace("%data%","Kevin Briggs");
-formattedRole = HTMLheaderRole.replace("%data%","Teacher");
-
 
 var bio = {
-	name:"Kevin",
-	role: "teacher",
-	contact: "kevin@gmail.com"
+	name:"Kevin Briggs",
+	role: "Teacher",
+	welcomeMessage: "Hello there",
+	contact: "kevin@gmail.com",
+	skills: ["Javascript","HTML","CSS"],
+	picture: "images/fry.jpg"
+
 };
 
 
-var work = {
-	position: "Technology",
-	employer: "Bancroft",
-	years: 3
-};
+var work =  
+{
+	"jobs": [
+		{
+			"employer": "Bancroft",
+			"title": "Tech Teacher",
+			"location": "Worcester, MA",
+			"dates": "2014 - Present",
+			"description": "Did tech stuff"
+		},
 
-var education = {
-	name: "La Salle",
-	years: 4,
-	city: "Philadelphia"
-};
+		{
+			"employer": "Journeys",
+			"title": "Teacher",
+			"location": "Jackson, WY",
+			"dates": "2013 - 2014",
+			"description": "Taught a bunch of stuff"
+
+		}
+	]
+}
+
+var projects = 
+{
+	"projects": [
+		{
+			"title": "mrteacherkevin",
+			"dates": 2014,
+			"description": "Built a website"
+		}, 
+		{
+			"title": "Arudino",
+			"dates": 2015,
+			"description": "Made things with an Arudino"
+		}]
+
+}
 
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#main").append(bio.name);
-$("#main").append(work["position"]);
-$("#main").append(education.name);
+
+var education = 
+{
+	"schools": [
+	{
+		"name": "La Salle",
+		"years": 4,
+		"city": "Philadelphia"
+	}, 
+	{
+		"name": "Endicott",
+		"years": 2,
+		"city": "Mexico City"
+	}],
+
+	"Online Courses": [
+	{
+		"name": "Javascript Crash Course",
+		"school": "Udacity"
+	}, 
+	{
+		"name": "CS50",
+		"school": "Harvard University"
+	}]
+
+}
 
 
 
